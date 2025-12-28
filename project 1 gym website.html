@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.gym/mantra.com</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(image/girl-3253532_1280.jpg) no-repeat center center/cover;
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+            
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            /* border: 2px solid greenyellow; */
+
+
+        }
+
+        .mid {
+            display: block;
+            width: 600px;
+            margin: 25px auto;
+            /* border: 2px solid greenyellow; */
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            /* border: 2px solid greenyellow; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+            font-weight: bolder;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: medium;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 5px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .navbar li a:hover {
+            color: blue;
+        }
+
+        .left img {
+            width: 140px;
+            filter: invert(100%);
+        }
+
+        .left .logo {
+            text-align: center;
+            font-family: cursive;
+            line-height: 13px;
+
+        }
+
+        .btn {
+            margin: 15px 9px;
+            padding: 10px;
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: small;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: aquamarine;
+            background-color: grey;
+        }
+
+        section {
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        .container {
+            margin: 145px 51px;
+            padding: 16px 10px;
+            /* border: 2px solid red; */
+            border-radius: 2px;
+            width: 330px;
+            font-size: small;
+
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container.btn{
+            display: block;
+            width: 33%;
+            
+
+        }
+        
+        .form input{
+            display:block;
+            width: 300px;
+            padding: 0px 0px;
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 10px;
+            margin: 9px 26px;
+            /* border: 2px solid yellow; */
+            border: radius 5px;
+        text-align: center;
+            }
+        .btn1{
+            /* border: 2px solid green; */
+            margin: 32px 72px;
+            padding:15px 8px ;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+
+        <div class="left">
+            <img src="image/download.png" alt="" height="70px">
+            <div class="logo">GyM ManTra</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" target="blank">HOME</a></li>
+                <li><a href="#" target="blank">ABOUT US</a></li>
+                <li><a href="#" target="blank">GUIDE</a></li>
+                <li><a href="#" target="blank">DIET PLANNER </a></li>
+                <li><a href="#" target="blank">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">CONTACT US</button>
+            <button class="btn">E-MAIL US</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join us now</h1>
+        <form action="backend.python">
+
+            <div class="form">
+                <label for="name">NAME:</label>
+                <input type="text" name="my name" id="name" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form">
+                <label for="ade">AGE:</label>
+                <input type="number" name="my age" id="age" placeholder="Enter Your age">
+            </div>
+
+
+            <div class="form">
+                <label for="E-MAIL">E-MAIL:</label>
+                <input type="email" name="my E-MAIL" id="name" placeholder="Enter Your E-MAIL">
+            </div>
+            <div class="form">
+                <p>Gender:</p>
+                <label for="male">male</label>
+                <input type="radio" name="my gender" id="male">
+                <label for="female">
+                    female<input type="radio" name="my gender" id="female">
+                </label>
+            </div>
+
+            <div class="form">
+                <label for="address">ADDRESS:</label>
+                <input type="text" name="my address" id="address" placeholder="Enter Your address">
+            </div>
+
+            <div class="btn1">
+                <label for="submit"></label>
+                <input type="submit" value="submit now" id="submit">
+               
+                 <label for="reset"></label>
+                <input type="reset" value="reset now" id="reset">
+            </div>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

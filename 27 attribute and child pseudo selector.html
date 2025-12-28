@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributw and child pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        /* pseudoselector */
+        input[type=text] {
+            padding: 20px;
+            border: 2px solid green;
+            color: aliceblue;
+        }
+        a[target]{
+            font-size: 50px;
+            color: orange;
+
+        }
+        a[target=self]{
+            font-size: 50px;
+            color:blue;
+
+        }
+
+        /* n th pseudo selector */
+        li:nth-child(1){
+            color: red;
+        }
+        li:nth-child(2n+0){
+            color: blue;
+        }
+        li:nth-child(3n+3){
+            color: green;
+        }
+        li:nth-child(odd
+        ){
+            background-color: green;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="blank">go to google</a></h1>
+        <h1><a href="https://facebook.com" target="self">go to facebook</a></h1>
+        <form action="backend.python" class="control">
+            <input type="email" placeholder="enter your email">
+            <input type="text" placeholder="enter your name">
+            <input type="submit" value="submit now">
+        </form>
+        <ul>
+            <li class="item" id="item1">first</li>
+            <li class="item" id="item2">second</li>
+            <li class="item" id="item3">third</li>
+            <li class="item" id="item4">fourth</li>
+            <li class="item" id="item5">fifth</li>
+            <li class="item" id="item5">sixth</li>
+            <li class="item" id="item5">seventh</li>
+            <li class="item" id="item5">eighth</li>
+            <li class="item" id="item5">ninth</li>
+            <li class="item" id="item5">tenth</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

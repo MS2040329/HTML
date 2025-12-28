@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries+css grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+
+        }
+
+        .item {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>SERVICES</span>
+            <span>CONTACT US</span>
+        </nav>
+        <section class="item">
+            <h2>learning css in hindi</h2>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium explicabo harum repellendus labore laudantium autem vero suscipit cum mollitia! Quasi nam similique deleniti deserunt maiores eos, ratione ad autem labore perspiciatis cum dolorem illo voluptas! Veniam reprehenderit debitis molestiae unde ipsam commodi perspiciatis ea vero tenetur inventore excepturi suscipit, illo fugit odit neque numquam in eaque alias rem. Eius voluptatum, beatae eum unde quidem dolor ex deserunt omnis voluptatem saepe amet laudantium ipsa accusantium veritatis voluptates eligendi consequuntur blanditiis, facere modi sunt dignissimos. At repellat velit nihil delectus ipsa quis obcaecati, aut veniam rerum fugit fuga libero sunt saepe reprehenderit ullam ab dolorum perferendis doloremque assumenda consequuntur, placeat corrupti dolores vel. Sit nesciunt, deleniti eveniet ea, distinctio quia doloremque eius fugiat nostrum adipisci natus odit quisquam! Soluta ullam saepe totam similique, cupiditate dolor ducimus! Hic vero tempora laborum. Quibusdam tempora, est consequatur alias officia neque at quos dignissimos fuga culpa sed aliquid error consequuntur dolore! A perspiciatis nulla voluptates odit placeat aperiam delectus commodi, molestiae magnam illo quisquam optio quis accusamus repellendus possimus, blanditiis ad, rem distinctio in natus? Saepe quidem enim odit soluta? Voluptates corporis eaque itaque inventore iusto debitis reprehenderit assumenda, amet minus velit accusantium soluta ea vel quaerat. Facere esse iusto quaerat quisquam atque quos nulla perspiciatis repudiandae nesciunt fuga, quia iste maiores quae cupiditate accusantium hic ut. Aliquam voluptatem natus quaerat aperiam velit atque, sequi aspernatur beatae dolorum dolorem tempora. Quam a debitis, earum corporis ipsa odio quasi explicabo laborum porro. Sequi necessitatibus obcaecati ratione reiciendis quod dolore quia repellendus esse. Hic non id accusamus nisi quidem excepturi earum consequuntur quam! Quae accusantium modi odio expedita hic maxime vel! Eligendi ab temporibus et deleniti perspiciatis, enim quidem eos sunt harum sed dicta hic odit rem saepe laborum aspernatur deserunt labore tempora sint facere ex quo. Sit incidunt eum temporibus excepturi quam, quo magni natus beatae ut, rerum nihil sunt dolore vel! Eos, autem! Omnis voluptatem nostrum quaerat, ad enim quasi explicabo voluptates illo sapiente beatae est sit unde doloremque consectetur nisi tenetur, cumque aperiam fugit! Ad debitis obcaecati iste a perspiciatis quibusdam ipsam mollitia? Vero natus assumenda, eum quasi, eveniet nihil quis dicta qui commodi architecto itaque eius. Quisquam, veniam. Quaerat perspiciatis iusto dicta illum distinctio aperiam optio quibusdam esse voluptas quidem molestias odio, ullam, aspernatur impedit officiis quos, architecto nobis rem! Distinctio, dignissimos accusamus, amet libero quod similique nisi molestias officia, alias aliquam reiciendis ut.</P>
+        </section>
+        <aside class="item">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="item">copyright inflation</footer>
+</body>
+
+</html>

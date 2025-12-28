@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables and custom properties</title>
+    <style>
+        :root {
+            --manoj-color: orange;
+
+            --box-color: grey;
+        }
+
+        .class {
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            box-shadow: 10px 10px 10px var(--box-color);
+            margin: 60px 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: var(--manoj-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="class"></div>
+        <div class="class"></div>
+        <div class="class"></div>
+        <div class="class"></div>
+    </div>
+</body>
+
+</html>

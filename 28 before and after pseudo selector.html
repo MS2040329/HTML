@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: aliceblue;
+            background-color: black;
+            }
+            
+            header::before{
+            background: url('image/man-2604149_1280.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        .navelements {
+
+            list-style: none;
+            padding: 20px 23px;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            position: sticky;
+        }
+
+
+
+        h2 {
+            font-size: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="navelements">HOME</li>
+                <li class="navelements">ABOUT</li>
+                <li class="navelements">CONTACT US</li>
+                <li class="navelements">E-MAIL US</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>coding ninja</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eaque saepe dignissimos vitae blanditiis
+            ex fugiat dolor incidunt, quas sint quasi deserunt veritatis harum minima possimus placeat commodi veniam
+            sunt nemo magnam.</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

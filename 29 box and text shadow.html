@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container {
+           display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+            border: 3px solid orange;
+
+        }
+        #card1{
+            /* box-shadow: inset x-offset y-offset blur-radius spreading-radius color ; */
+            box-shadow: 5px 5px green; 
+            /* text-shadow: x-offset y-offset blur-radius  color ; */
+            text-shadow: 4px 5px white;
+        }
+        #card2{
+            box-shadow: 5px 5px 10px green;
+            text-shadow: 4px 5px 5px white;
+        }
+        #card3{
+            box-shadow: -5px -5px 10px green;
+            text-shadow: -4px -5px white;
+        }
+        #card4{
+            box-shadow: inset 5px 5px 0px 10px red;
+            text-shadow:  4px 5px 5px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>this is html tutorial </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam nobis eligendi iste consequatur
+                tenetur nihil. At, officiis recusandae illo dolores modi magni expedita molestias explicabo ducimus eum
+                quo porro ratione nobis quidem in.</p>
+        </div>
+
+        <div class="card" id="card2">
+            <h2>this is css tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam nobis eligendi iste consequatur
+                tenetur nihil. At, officiis recusandae illo dolores modi magni expedita molestias explicabo ducimus eum
+                quo porro ratione nobis quidem in.</p>
+        </div>
+
+        <div class="card" id="card3">
+            <h2>this is javascript tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam nobis eligendi iste consequatur
+                tenetur nihil. At, officiis recusandae illo dolores modi magni expedita molestias explicabo ducimus eum
+                quo porro ratione nobis quidem in.</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>this is python tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam nobis eligendi iste consequatur
+                tenetur nihil. At, officiis recusandae illo dolores modi magni expedita molestias explicabo ducimus eum
+                quo porro ratione nobis quidem in.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
